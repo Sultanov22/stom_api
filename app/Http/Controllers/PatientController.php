@@ -61,6 +61,6 @@ class PatientController extends Controller
      */
     public function destroy(string $id)
     {
-
+        Patient::FindOrFail($id)->delete();
     }
 }
